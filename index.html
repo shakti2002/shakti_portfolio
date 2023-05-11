@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
+</head>
+<body>
+    <!-- navigation bar for mobile -->
+    <nav id="nav">
+        <div id="logo">
+            <h1>Portfo<span>lio.</span></h1>
+
+        </div>
+        
+            
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#about">About</a></li>
+            <li class="items"><a href="#education">Education</a></li>
+            <li class="items"><a href="#project">Project</a></li>
+            <li class="items"><a href="#skills">SKills</a></li>
+            
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+            
+        
+        
+    </nav>
+    <script>
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        
+        menuBtn.onclick=()=>{
+            menu.classList.add("active")
+            menuBtn.classList.add("hide")
+        }
+        cancelBtn.onclick=()=>{
+            menu.classList.remove("active")
+            menuBtn.classList.remove("hide")
+        }
+
+    </script>
+ 
+    <!-- navigation bar for desktop-->
+    <nav id="navbar">
+        <div id="logo">
+            <h1>Portfo<span>lio.</span></h1>
+        </div>
+        <ul>
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#education">Education</a></li>
+            <li class="item"><a href="#project">Project</a></li>
+            <li class="item"><a href="#skills">Skills</a></li>
+            
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+    </nav>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h1 class="text1">Hello! My name is</h1>
+            <h1 class="text2">Shakti Chaturvedi</h1>
+            <h1 class="text3">and I'm a <span>competitive Programmer and Data Scientist </span></h1>
+            <a href="https://www.linkedin.com/in/shakti-chaturvedi-80620b228/">{ linkedin }</a>
+        </div>
+        
+    </section>
+
+    <!-- icon section -->
+    <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/shakti-chaturvedi-80620b228/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/shakti2002" class="GitHub"><i class="fa-brands fa-github-alt"></i></a>
+        <a href="https://www.instagram.com/shaktichaturvedi_/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        
+        <a href="https://twitter.com/ShaktiChaturv00" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about_me">
+            <h1>About me</h1>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="image/shakti2_profile.jpg" alt="loading...">
+                
+            </div>
+            <div class="info">
+                <div class="text">Hello, I am Shakti chaturvdei and I'm a <span>{Programmer}</span></div>
+                <p>an <span>&lt; Python Programmer &gt;</span> , a <span>&lt;Web Developer&gt;</span> ,   <span>&lt;Artificial Intelligence&gt;</span> , <span>&lt;Machine Learning&gt;</span>  and <span>&lt;Data Science&gt;</span> enthusiast.You can find me in various plateform of <strong>competitive Programming</strong> </p>
+                <div class="btn">
+                    <a href="https://drive.google.com/file/d/1MG8Jx1by2BaH_70xEA_47GG8yGKNw2RF/view?usp=share_link">View My Resume</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education section -->
+    <section class="timeline-section" id="education">
+        <div class="education_title">
+            <br>
+            <h2 class="title">My Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h3>High School, Care English School</h3>
+                    <p>CBSE Board</p>
+                </div>
+            
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary, Care English School</h3>
+                    <p>Appeared higher secondary examination and scored <strong>82.2%</strong> in Mathmatics, Physics and chemistry</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021-2025</div>
+                <div class="timeline-content">
+                    <h3>Samrat Ashok Technological Institute, Vidisha</h3>
+                    <p>Persuing B.Tech in Artificial Intelligence and Data Science from Samrat Ashok Technological Institute, Vidisha <strong>8.48 cgpa</strong></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- project section -->
+    <section class="project" id="project" >
+        <div class="project_info">
+            <br>
+            <h2 class="title">&lt;/ My Projects &gt;</h2>
+            <div class="project-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Paddle Ball Game</div>
+                        <ul class="no-bullets">
+                            <li><a href="https://github.com/shakti2002/paddle__ball_game.py">Portfolio</a></li>
+                            <li><a href="https://github.com/shakti2002/paddle__ball_game.py">Paddle Ball Game(python)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Face Recognition Security Door Lock System </div>
+                        <ul class="no-bullets">
+                            <li><a href="https://github.com/shakti2002/FACE_RECOGINITION_SECURITY_SYSTEM"></a>Face Recognition Security Door Lock System </li>
+                            <li><a href="Face Recognition Security Door Lock System ">Using Raspberry Pi Operating System</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <div class="text">Virtual Assistant</div>
+                            <ul class="no-bullets">
+                                <div><li><p><a  href="https://github.com/shakti2002/Virtual__Assistant">Voice Assistant</a></p></li></div>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- skills section -->
+
+    <section class="skills" id="skills">
+        <div class="skills_title">
+            <br>
+            <h2>Technical skills</h2>
+        </div>
+
+        <div class="skill-content">
+            <div class="column left">
+                <div class="text">My creative skills and experience</div>
+                <p>I started my career in <strong>Artificial Intelligence and Data Science in Samrat Ashok Technological Institute Vidisha</strong>  in 2021 and started learning different type of technologies. I have learned a lot of programming language and scripting language. Apart from college study i learnt from myself using external resources to strong hold of latest technology in this technical era. Here i have mentioned some of my skills which is mostly used by me. </p>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>Python</span>
+                        <span>90%</span>
+                        
+                    </div>
+                    <div class="line python"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>C++</span>
+                        <span>85%</span>
+                        
+                    </div><div class="line cpp"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML & CSS</span>
+                        <span>85%</span>
+                        
+                    </div><div class="line html_css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Machine learning</span>
+                        <span>60%</span>
+                        
+                    </div><div class="line machine_learning"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>C</span>
+                        <span>85%</span>
+                        
+                    </div><div class="line c"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Javascript</span>
+                        <span>20%</span>
+                        
+                    </div><div class="line java"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>40%</span>
+                        
+                    </div><div class="line mysql"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    
+
+
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+            <div class="con_title">
+                <br>
+                <h2 class="title">Contact me </h2>
+            </div>
+            <div class="contact-content">
+                <div class="column-left">
+                    <div class="text">Get in Touch</div>
+                    <p>You can contact me via:</p>
+                    <div class="icons">
+                        
+                        <div class="row">
+                            <a href="https://goo.gl/maps/iHpQe1H1GqMDd4iv5"><i class="fa-solid fa-location-dot"></i></a>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">PQ7R+MF7, Chhatarpur, Madhya Pradesh 471101</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="mailto:shaktichaturvedi33073@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <div class="info">
+                                <div class="head">E-Mail</div>
+                                <div class="sub-title">shaktichaturvedi33073@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="tel://6266114341/"><i class="fa-solid fa-phone"></i></a>
+                            <div class="info">
+                                <div class="head">Call</div>
+                                <div class="sub-title">+91 8817755431</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="column-right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field_name">
+                                <input type="text" placeholder="Name" required>
+
+                            </div>
+                            <div class="field_email">
+                                <input type="text" placeholder="E-Mail" required>
+                                
+                            </div>
+                        </div>
+                        <div class="field">
+                             <input type="text" placeholder="Subject" required>
+                                
+                        </div>
+                        <div class="field_textarea">
+                            <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                                
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
